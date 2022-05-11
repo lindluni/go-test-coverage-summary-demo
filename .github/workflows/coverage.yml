@@ -16,7 +16,7 @@ jobs:
       - name: Run Tests with Coverage
         run: go test -cover -json ./... | jq -s > results.json
 
-#      - uses: lindluni/go-test-reporter@main
-#        with:
-#          coverage_file: results.json
-#          coverage_threshold: 90
+      - uses: lindluni/go-test-reporter@main
+        with:
+          coverage_file: results.json
+          coverage_threshold: 90
